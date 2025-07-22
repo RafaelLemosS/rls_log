@@ -69,7 +69,7 @@ function sendLogs(logInfo)
         user_name = string.format("%s - %s", user_id, getName(user_id) or "")
         if getSource(user_id) then
             local ipPlayer = GetPlayerEndpoint(getSource(user_id))
-            IP = ipPlayer and "["..ipPlayer.."](https://check-host.net/ip-info?host="..ipPlayer..")" or "N/A"
+            IP = ipPlayer and ipPlayer or "N/A"
         end
     end
     
